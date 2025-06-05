@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Github as GitHub, Linkedin, Mail } from 'lucide-react';
 import { ThemeContext } from '../context/ThemeContext';
+import pic from ../pic.jpg;
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
@@ -62,7 +63,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-400">
                   <img 
                     className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover" 
-                    src="/pic.jpg" 
+                    src={pic}
                     alt="Your Profile Photo" 
                   />
                 </div>

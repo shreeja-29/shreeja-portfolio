@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Github as GitHub, Linkedin, Mail } from 'lucide-react';
 import { ThemeContext } from '../context/ThemeContext';
-import pic from ../pic.jpg;
+import pic from '../pic.jpg';
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);

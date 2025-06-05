@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Github as GitHub, Linkedin, Mail } from 'lucide-react';
 import { ThemeContext } from '../context/ThemeContext';
-import pic from "../pic.jpg";
+
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
 
@@ -9,6 +9,8 @@ const Hero = () => {
     <section id="home" className="pt-24 pb-20 md:pt-32 md:pb-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          
+          {/* Left Content */}
           <div className="w-full md:w-1/2 order-2 md:order-1">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-4">
               <span className="block">Hi, I'm</span>
@@ -54,6 +56,7 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Profile Image */}
           <div className="w-full md:w-2/5 order-1 md:order-2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className={`absolute inset-0 rounded-full ${
@@ -61,14 +64,16 @@ const Hero = () => {
               } p-2`}>
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-400">
                   <img 
+                    loading="lazy"
                     className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover" 
-                    src={pic}
+                    src="/pic.jpg"
                     alt="Your Profile Photo" 
                   />
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

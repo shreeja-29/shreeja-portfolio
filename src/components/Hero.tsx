@@ -56,24 +56,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Profile Image */}
-          <div className="w-full md:w-2/5 order-1 md:order-2 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className={`absolute inset-0 rounded-full ${
-                theme === 'dark' ? 'bg-blue-600/20' : 'bg-blue-100'
-              } p-2`}>
-                <div className="w-full h-full rounded-full overflow-hidden border-4 border-blue-500 dark:border-blue-400">
-                  <img 
-                    loading="lazy"
-                    className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover" 
-                    src="/pic.jpg"
-                    alt="Your Profile Photo" 
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
+          
         </div>
       </div>
     </section>

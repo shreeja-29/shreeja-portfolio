@@ -12,7 +12,7 @@ const Projects = () => {
       description: 'A facial recognition system using computer vision techniques for secure authentication and identity verification.',
       image: 'https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       technologies: ['Python', 'OpenCV', 'TensorFlow', 'React'],
-      githubUrl: 'https://github.com/shreeja-29/Face-Biometric',
+      githubUrl: 'https://github.com/shreeja-29/FaceBiometricAttendance',
       liveUrl: '#',
     },
     {
